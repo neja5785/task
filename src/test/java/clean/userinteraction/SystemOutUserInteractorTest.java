@@ -36,6 +36,6 @@ public class SystemOutUserInteractorTest {
 
         bo.flush();
         String allWrittenLines = new String(bo.toByteArray());
-        assertEquals(allWrittenLines, "Text to user");
+        assertEquals(allWrittenLines.trim(), "Text to user");
     }
 }
